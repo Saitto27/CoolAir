@@ -1,0 +1,608 @@
+/* ===================================
+   AC SERVICE COMPANY PORTFOLIO WEBSITE
+   Shared Stylesheet
+=================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --primary:#0B2545;
+    --secondary:#168AAD;
+    --accent:#00B4D8;
+    --light:#F4FAFD;
+    --dark:#333333;
+    --white:#ffffff;
+    --shadow:0 10px 25px rgba(0,0,0,0.08);
+    --transition:all 0.3s ease;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+/* =========================
+   Global Styles
+========================= */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    color:var(--primary);
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    max-width:700px;
+    margin:0 auto 40px;
+    color:#666;
+}
+
+img{
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+.btn-custom{
+    background:var(--secondary);
+    color:var(--white);
+    padding:12px 28px;
+    border-radius:50px;
+    font-weight:600;
+    border:none;
+    transition:var(--transition);
+}
+
+.btn-custom:hover{
+    background:var(--primary);
+    color:var(--white);
+    transform:translateY(-3px);
+}
+
+.btn-outline-custom{
+    border:2px solid var(--white);
+    color:var(--white);
+    padding:12px 28px;
+    border-radius:50px;
+    transition:var(--transition);
+}
+
+.btn-outline-custom:hover{
+    background:var(--white);
+    color:var(--primary);
+}
+
+.shadow-card{
+    box-shadow:var(--shadow);
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    background:var(--white);
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.logo-placeholder{
+    width:45px;
+    height:45px;
+    background:var(--accent);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:20px;
+}
+
+.nav-link{
+    color:var(--primary);
+    font-weight:500;
+    margin:0 6px;
+    transition:var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--accent) !important;
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(11,37,69,0.72), rgba(11,37,69,0.72)),
+        url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   About Section
+========================= */
+
+.about-img{
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.about-feature{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.about-feature i{
+    color:var(--accent);
+    font-size:1.5rem;
+}
+
+/* =========================
+   Service Cards
+========================= */
+
+.service-card{
+    background:white;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+    height:100%;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-icon{
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    background:rgba(0,180,216,0.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+/* =========================
+   Why Choose Us
+========================= */
+
+.choose-box{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    height:100%;
+}
+
+.choose-box i{
+    color:var(--secondary);
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+/* =========================
+   Testimonials
+========================= */
+
+.testimonial-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    height:100%;
+}
+
+.stars{
+    color:#ffc107;
+    margin-bottom:10px;
+}
+
+/* =========================
+   CTA Section
+========================= */
+
+.cta-section{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:white;
+    text-align:center;
+    border-radius:30px;
+    padding:60px 20px;
+}
+
+.cta-section h2{
+    font-weight:700;
+}
+
+/* =========================
+   Page Banner
+========================= */
+
+.page-banner{
+    background:linear-gradient(
+        rgba(11,37,69,0.85),
+        rgba(11,37,69,0.85)),
+        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:130px 20px;
+}
+
+.page-banner h1{
+    font-weight:700;
+}
+
+/* =========================
+   Pricing Cards
+========================= */
+
+.pricing-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+    height:100%;
+    position:relative;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+}
+
+.pricing-header{
+    padding:30px;
+    text-align:center;
+    color:white;
+    background:var(--primary);
+}
+
+.pricing-header.standard{
+    background:var(--secondary);
+}
+
+.pricing-price{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.pricing-body{
+    padding:30px;
+}
+
+.pricing-body ul{
+    list-style:none;
+    padding-left:0;
+}
+
+.pricing-body li{
+    margin-bottom:12px;
+}
+
+.pricing-body li i{
+    color:green;
+    margin-right:8px;
+}
+
+.popular-badge{
+    position:absolute;
+    top:15px;
+    right:-35px;
+    width:160px;
+    text-align:center;
+    background:#ff9800;
+    color:white;
+    padding:8px;
+    font-size:13px;
+    font-weight:600;
+    transform:rotate(45deg);
+}
+
+/* =========================
+   Extra Services
+========================= */
+
+.extra-service{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:var(--transition);
+}
+
+.extra-service:hover{
+    transform:translateY(-6px);
+}
+
+.extra-service i{
+    font-size:2rem;
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+/* =========================
+   Comparison Table
+========================= */
+
+.table thead{
+    background:var(--primary);
+    color:white;
+}
+
+.table{
+    background:white;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.accordion-button:not(.collapsed){
+    background:var(--secondary);
+    color:white;
+}
+
+/* =========================
+   Contact Page
+========================= */
+
+.contact-card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    height:100%;
+}
+
+.contact-card i{
+    font-size:2rem;
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.contact-form{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 0.2rem rgba(0,180,216,0.2);
+}
+
+/* =========================
+   Map Section
+========================= */
+
+.map-container{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.map-container iframe{
+    width:100%;
+    height:450px;
+    border:0;
+}
+
+/* =========================
+   Social Links
+========================= */
+
+.social-icons a{
+    width:45px;
+    height:45px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:var(--secondary);
+    color:white;
+    margin:0 5px;
+    transition:var(--transition);
+}
+
+.social-icons a:hover{
+    background:var(--primary);
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer{
+    background:var(--primary);
+    color:white;
+    padding-top:60px;
+}
+
+.footer h5{
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.footer a{
+    color:#d8e8f9;
+    display:block;
+    margin-bottom:8px;
+    transition:var(--transition);
+}
+
+.footer a:hover{
+    color:white;
+    padding-left:5px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.15);
+    margin-top:30px;
+    padding:20px 0;
+    text-align:center;
+}
+
+/* =========================
+   Back To Top
+========================= */
+
+#backToTop{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:var(--accent);
+    color:white;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+    box-shadow:var(--shadow);
+}
+
+#backToTop:hover{
+    background:var(--primary);
+}
+
+/* =========================
+   Animations
+========================= */
+
+.fade-up{
+    animation:fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:991px){
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    section{
+        padding:70px 0;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:85vh;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    .page-banner{
+        padding:100px 20px;
+    }
+}
+
+@media(max-width:576px){
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .btn-custom,
+    .btn-outline-custom{
+        width:100%;
+        margin-bottom:10px;
+    }
+}
